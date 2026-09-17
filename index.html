@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz de Tecnologia</title>
+	<link rel="stylesheet" href="script.css">
+</head>
+<body>
+	<main class="quiz">
+		<p class="tag">QUIZ</p>
+		<h1>Quiz de HTML, CSS e JavaScript</h1>
+		<p class="intro">Escolha uma resposta em cada pergunta.</p>
+
+		<form id="quiz-form">
+			<table class="quiz-tabela">
+				<caption>Quiz de HTML, CSS e JavaScript</caption>
+				<thead>
+					<tr>
+						<th>Pergunta</th>
+						<th>Resposta 1</th>
+						<th>Resposta 2</th>
+						<th>Resposta 3</th>
+						<th>Resposta 4</th>
+						<th>Resposta 5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="pergunta">
+						<th scope="row">1. Qual tag HTML é usada para criar um link?</th>
+						<td><label><input type="radio" name="pergunta-1" value="&lt;img&gt;"> &lt;img&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-1" value="&lt;a&gt;" data-correta="true"> &lt;a&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-1" value="&lt;link&gt;"> &lt;link&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-1" value="&lt;href&gt;"> &lt;href&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-1" value="&lt;url&gt;"> &lt;url&gt;</label></td>
+					</tr>
+					<tr class="pergunta">
+						<th scope="row">2. Qual linguagem define o estilo de uma página?</th>
+						<td><label><input type="radio" name="pergunta-2" value="HTML"> HTML</label></td>
+						<td><label><input type="radio" name="pergunta-2" value="CSS" data-correta="true"> CSS</label></td>
+						<td><label><input type="radio" name="pergunta-2" value="SQL"> SQL</label></td>
+						<td><label><input type="radio" name="pergunta-2" value="PHP"> PHP</label></td>
+						<td><label><input type="radio" name="pergunta-2" value="JSON"> JSON</label></td>
+					</tr>
+					<tr class="pergunta">
+						<th scope="row">3. Qual símbolo seleciona uma classe no CSS?</th>
+						<td><label><input type="radio" name="pergunta-3" value="#"> #</label></td>
+						<td><label><input type="radio" name="pergunta-3" value="." data-correta="true"> .</label></td>
+						<td><label><input type="radio" name="pergunta-3" value="@"> @</label></td>
+						<td><label><input type="radio" name="pergunta-3" value="$"> $</label></td>
+						<td><label><input type="radio" name="pergunta-3" value="&amp;"> &amp;</label></td>
+					</tr>
+					<tr class="pergunta">
+						<th scope="row">4. Qual comando mostra uma mensagem no console?</th>
+						<td><label><input type="radio" name="pergunta-4" value="print()"> print()</label></td>
+						<td><label><input type="radio" name="pergunta-4" value="message()"> message()</label></td>
+						<td><label><input type="radio" name="pergunta-4" value="console.log()" data-correta="true"> console.log()</label></td>
+						<td><label><input type="radio" name="pergunta-4" value="write.log()"> write.log()</label></td>
+						<td><label><input type="radio" name="pergunta-4" value="show()"> show()</label></td>
+					</tr>
+					<tr class="pergunta">
+						<th scope="row">5. Qual tag representa o maior título em HTML?</th>
+						<td><label><input type="radio" name="pergunta-5" value="&lt;title&gt;"> &lt;title&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-5" value="&lt;h6&gt;"> &lt;h6&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-5" value="&lt;head&gt;"> &lt;head&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-5" value="&lt;h1&gt;" data-correta="true"> &lt;h1&gt;</label></td>
+						<td><label><input type="radio" name="pergunta-5" value="&lt;header&gt;"> &lt;header&gt;</label></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p id="resultado" class="resultado" aria-live="polite"></p>
+			<button id="baixar" class="baixar" type="submit" disabled>Baixar respostas (.txt)</button>
+		</form>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
